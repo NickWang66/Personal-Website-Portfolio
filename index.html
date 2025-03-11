@@ -119,6 +119,48 @@
         .product-container img:hover {
             transform: scale(1.05);
         }
+
+        .video-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .video-row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            width: 100%;
+        }
+
+        .video-player {
+            width: 300px;
+            height: 200px;
+            background: #E6E6E6;
+            border: 1px solid #7A7A7A;
+            border-radius: 10px;
+        }
+
+        .documentary-title {
+            font-size: 2em;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .video-row {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .video-player {
+                width: 100%;
+                height: 400px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -170,6 +212,33 @@
             From this project, I learned how to develop a comprehensive branding strategy and implement it through a cohesive visual identity. By redesigning the Trojan brand, I gained hands-on experience in creating new logos, packaging, and social media campaigns while effectively using tools like Adobe Illustrator and Firefly. This project strengthened my ability to craft compelling visual narratives and reinforced the importance of aligning design with target audience needs and contemporary branding trends.
         </p>
         <img src="Logos.png" alt="Trojan Logo" class="full-width">
+
+        <!-- Video Section -->
+        <div class="video-container">
+            <div class="video-row">
+                <iframe class="video-player" src="https://www.youtube.com/embed/a-ycSkR9VXY" frameborder="0" allowfullscreen></iframe>
+                <iframe class="video-player" src="https://www.youtube.com/embed/364Tm3PyE8k" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-row">
+                <iframe class="video-player" src="https://www.youtube.com/embed/ghMyVBlSx8Q" frameborder="0" allowfullscreen></iframe>
+                <iframe class="video-player" src="https://www.youtube.com/embed/LUJrWFOx_x4" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Documentary Section -->
+        <h2 class="documentary-title">Documentary</h2>
+        <p class="description">Filming a documentary has been an incredible learning experience for me. I have learned how to craft compelling narratives, conduct interviews, and capture authentic moments. Technically, I have improved my skills in camera work, lighting, and video editing. Managing research, scheduling, and budgeting has helped me become more organized and communicative. Facing unexpected challenges has strengthened my problem-solving abilities. Most importantly, this process has deepened my empathy and understanding of real-world issues. By exploring different perspectives, I have grown more socially aware. Ultimately, it’s not just about making a film—it’s about uncovering truths and making an impact.
+
+
+
+
+
+
+
+</p>
+        <div class="video-container">
+            <iframe class="video-player" src="https://www.youtube.com/embed/C-sTEAlszL0?si=JXENKVAtKjttxOsO" frameborder="0" allowfullscreen></iframe>
+        </div>
     </section>
 </body>
 </html>
